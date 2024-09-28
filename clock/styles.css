@@ -1,0 +1,78 @@
+.clock-center {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: red; /* Red color for clock center */
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 20;
+}
+.second-hand {
+    position: absolute;
+    width: 2px;
+    height: 140px;
+    background: red;
+    top: 18px;
+    left: 50%;
+    transform-origin: 50% 100%;
+    transform: rotate(0deg);
+    transition: all 0.05s ease-in-out;
+    z-index: 10;
+}
+/* styles.css */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #2c3e50; /* Dark Blue Background */
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.date-display {
+    color: #ecf0f1; /* Light grey text for date */
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    background-color: rgba(44, 62, 80, 0.8); /* Semi-transparent dark blue background */
+    padding: 0.5rem 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+    text-align: center;
+}
+
+.clock {
+    position: relative;
+    width: 320px;
+    height: 320px;
+    border: 10px solid #ecf0f1; /* Light Grey border */
+    border-radius: 50%;
+    background: radial-gradient(circle, #34495e 30%, #2c3e50 100%); /* Gradient from grey-blue to dark blue */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); /* Shadow for depth */
+    margin-bottom: 20px;
+}
+
+.time-display {
+    position: absolute;
+    color: #16a085; /* Greenish color for digital time on the clock face */
+    font-size: 1.8rem;
+    transform-origin: center;
+    background-color: rgba(22, 160, 133, 0.2); /* Light green background for readability */
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    transition: transform 0.5s ease-in-out; /* Smooth movement of the time */
+}
+
+
+.digital-clock {
+    color: #ecf0f1; /* Light grey text */
+    font-size: 2rem;
+    background-color: rgba(44, 62, 80, 0.8); /* Semi-transparent dark blue background */
+    padding: 0.5rem 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+    text-align: center;
+}
